@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04 - Form</title>
+    <link rel="stylesheet" type="text/css" href="../../styles.css" />
+  </head>
+  <body>
+    <!-- Exercise: Fix all semantics issues in the following HTML structure -->
+    <main>
+      <h1>04 - Form</h1>
+      <form>
+        <h2>Create a new database</h2>
+        <div>
+        <lable for="organization">Organization</lable>
+        <input type="text" id="organization" name="organization"/>
+        </div>
+        <lable for="database">Database name</lable>
+        <input type="text" id="database" name="database"/>
+        <div>
+          Lowercase alphanumeric characters, dashes and underscores only
+        </div>
+        <lable for="region">Region</lable>
+        <input type="text" id="region" name="region"/>
+        <div>
+          For best performance, enter a region closest to your application
+        </div>
+        <div>
+          <div>Plan type</div>
+          <input type="radio" name="basic" id="basic" value="basic" />
+          <label for="basic">Basic</label>
+          <input type="radio"  name="business" id="business" value="business"/>
+          <label for="business">Business</label>
+          <input type="radio" name="pro" id="pro" value="pro"/>
+          <label for="pro">Pro</label>
+        </div>
+        <div>
+          <div>Included Fields</div>
+          <input type="checkbox" name="name" id="name" value="name"/>
+          <label for="name" >Name</label>
+          <input type="checkbox" name="role" id="role" value="role"/>
+          <label for="role">Role</label>
+          <input type="checkbox" name="email" id="email" value="email"/>
+          <label for="email">Email</label>
+          <input type="checkbox" name="company_name" id="company_name" value="company_name" />
+          <label for="company_name">Company Name</label>
+          <input type="checkbox" name="description" id="description" value="description"/>
+          <label for="description">Description</label>
+          <input type="checkbox" name="type" id="type" value="type"/>
+          <label for="type">Type</label>
+        </div>
+        <button>Create</button>
+        <button>Reset</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.img {
+  display: block;
+  margin: 0 auto;
+}
+
+.bio {
+  margin: 20px auto;
+  width: 300px;
+}
+
+@font-face{
+  font-family: Fonstars;
+  src: url("../fp/Fonstars-4Bo0p.woff") format("woff");
+}
+.bio::first-line {
+  color: aqua;
+  font-size: auto;
+  font-family: Fonstars;
+}
