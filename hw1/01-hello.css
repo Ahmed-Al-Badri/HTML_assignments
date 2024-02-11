@@ -14,6 +14,6 @@
 }
 .bio::first-line {
   color: aqua;
-  font-size: auto;
+  font-size: 16px;
   font-family: Fonstars;
 }
