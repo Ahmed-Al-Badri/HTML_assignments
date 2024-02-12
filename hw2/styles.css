@@ -48,6 +48,18 @@ form {
   border-style: ridge;
 }
 
+a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+}
+
 @media only screen and (min-width: 415px) and (min-height: 721px){
   .MBN {
     flex-wrap: wrap;
