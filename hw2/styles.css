@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
 }
@@ -60,14 +60,14 @@ a:hover {
   text-decoration: inherit;
 }
 
-@media only screen and (min-width: 415px) and (min-height: 721px){
+@media only screen and (min-width: 415px) and (min-height: 721px) {
   .MBN {
     flex-wrap: wrap;
     justify-content: flex-end;
   }
 
-  .MBN div{
-    width:auto;
+  .MBN div {
+    width: auto;
   }
 
   .card {
@@ -77,10 +77,10 @@ a:hover {
 
 /* Code for exercise 02-cards */
 
-.Channels{
+.Channels {
   margin: auto;
 }
-.Channels_Time th{
+.Channels_Time th {
   background-color: black;
   color: white;
   text-align: center;
@@ -93,13 +93,13 @@ th {
   text-align: left;
   width: 250px;
 }
-.program th:first-child{
+.program th:first-child {
   background-color: purple;
   color: white;
   text-align: center;
 }
 
-.program:hover th:not(th:first-of-type){
+.program:hover th:not(th:first-of-type) {
   background-color: orange;
 }
 
@@ -117,7 +117,7 @@ th {
   text-align: start;
 }
 
-.user_info div{
+.user_info div {
   margin: 10px;
 }
 
@@ -125,24 +125,21 @@ label + input {
   flex: 0 0 200px;
   float: right;
   min-width: 200px;
-
 }
 
-.user_info input[type='radio'] + label{
+.user_info input[type="radio"] + label {
   font-weight: lighter;
 }
 
-.user_info input[type='radio'] {
+.user_info input[type="radio"] {
   accent-color: blue;
 }
 
-
-.user_info label{
+.user_info label {
   font-weight: bold;
 }
 
-
-.button_list button{
+.button_list button {
   font-size: medium;
   width: 100%;
   margin: 3px;
@@ -154,17 +151,17 @@ label + input {
   padding: 5px;
 }
 
-[id='submit']:hover {
+[id="submit"]:hover {
   background-color: purple;
   color: white;
 }
 
-button + [id='reset'] {
+button + [id="reset"] {
   background-color: white;
   color: black;
 }
 
-[id='reset']:hover {
+[id="reset"]:hover {
   background-color: grey;
 }
 
@@ -172,8 +169,6 @@ button + [id='reset'] {
   display: flex;
   flex-wrap: nowrap;
 }
-
-
 
 /* Code for exercise 04-form */
 
@@ -207,7 +202,6 @@ button + [id='reset'] {
   height: auto;
   max-width: 300px;
   max-height: 300px;
-
 }
 
 .card p {

@@ -16,56 +16,69 @@
         </div>
         <div>
           <label for="organization">Organization</label>
-          <input type="text" id="organization" name="organization"/>
+          <input type="text" id="organization" name="organization" />
         </div>
         <div>
           <label for="database">Database name</label>
-          <input type="text" id="database" name="database"/>
+          <input type="text" id="database" name="database" />
         </div>
         <div>
-          <p>
-            Lowercase alphanumeric characters, dashes and underscores only
-          </p>
+          <p>Lowercase alphanumeric characters, dashes and underscores only</p>
         </div>
         <div>
           <label for="region">Region</label>
-          <input type="text" id="region" name="region"/>
+          <input type="text" id="region" name="region" />
         </div>
         <div>
           For best performance, enter a region closest to your application
         </div>
         <div>
+          <fieldset>
+            <legend>Plan type</legend>
+            <div>
+              <input type="radio" name="plan_type" id="basic" value="basic" />
+              <label for="basic">Basic Plan</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="plan_type"
+                id="business"
+                value="business"
+              />
+              <label for="business">Business</label>
+            </div>
+            <div>
+              <input type="radio" name="plan_type" id="pro" value="pro" />
+              <label for="pro">Pro</label>
+            </div>
+          </fieldset>
+        </div>
         <fieldset>
-          <legend>Plan type</legend>
-          <div>
-            <input type="radio"  name="plan_type" id="basic" value="basic"/>
-            <label for="basic">Basic Plan</label>
-          </div>
-          <div>
-            <input type="radio"  name="plan_type" id="business" value="business"/>
-            <label for="business">Business</label>
-          </div>
-          <div>
-            <input type="radio" name="plan_type" id="pro" value="pro"/>
-            <label for="pro">Pro</label>
-          </div>
-        </fieldset>
-        </div>
-        <div>
-          <div>Included Fields</div>
-          <input type="checkbox" name="name" id="name" value="name"/>
-          <label for="name" >Name</label>
-          <input type="checkbox" name="role" id="role" value="role"/>
+          <legend>Included Fields</legend>
+          <input type="checkbox" name="name" id="name" value="name" />
+          <label for="name">Name</label>
+          <input type="checkbox" name="role" id="role" value="role" />
           <label for="role">Role</label>
-          <input type="checkbox" name="email" id="email" value="email"/>
+          <input type="checkbox" name="email" id="email" value="email" />
           <label for="email">Email</label>
-          <input type="checkbox" name="company_name" id="company_name" value="company_name" />
+          <input
+            type="checkbox"
+            name="company_name"
+            id="company_name"
+            value="company_name"
+          />
           <label for="company_name">Company Name</label>
-          <input type="checkbox" name="description" id="description" value="description"/>
+          <input
+            type="checkbox"
+            name="description"
+            id="description"
+            value="description"
+          />
           <label for="description">Description</label>
-          <input type="checkbox" name="type" id="type" value="type"/>
+          <input type="checkbox" name="type" id="type" value="type" />
           <label for="type">Type</label>
-        </div>
+        </fieldset>
         <button>Create</button>
         <button>Reset</button>
       </form>

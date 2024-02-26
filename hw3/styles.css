@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
 }
@@ -37,6 +37,71 @@ form {
 
 /* Code for exercise 02-form */
 
+.user_info {
+  margin: auto;
+}
+
+.user_info fieldset {
+  border-radius: 15px;
+}
+
+.user_info h1 {
+  text-align: start;
+}
+
+.user_info div {
+  margin: 10px;
+}
+
+label + input {
+  flex: 0 0 200px;
+  float: right;
+  min-width: 200px;
+}
+
+.user_info input[type="radio"] + label {
+  font-weight: lighter;
+}
+
+.user_info input[type="radio"] {
+  accent-color: blue;
+}
+
+.user_info label {
+  font-weight: bold;
+}
+
+.button_list button {
+  font-size: medium;
+  width: 100%;
+  margin: 3px;
+  background-color: black;
+  color: white;
+  border: 2px;
+  border-style: double;
+  border-color: black;
+  padding: 5px;
+}
+
+[id="submit"]:hover {
+  background-color: purple;
+  color: white;
+}
+
+button + [id="reset"] {
+  background-color: white;
+  color: black;
+}
+
+[id="reset"]:hover {
+  background-color: grey;
+}
+
+.button_list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 /* Code for exercise 03-starships */
 
 .btn-group {
@@ -50,4 +115,75 @@ form {
 .btn {
   width: 80px;
   padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.btn:hover {
+  background-color: purple;
+  color: white;
+}
+
+.starships {
+  background-color: white;
+  display: inline;
+  width: 100%;
+  margin: 10px;
+  border: 10px;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.starships h1 {
+  margin: 5px;
+  font-size: 1.3em;
+}
+
+.starships .main_info {
+  font-weight: bolder;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.starships p {
+  margin: 5px;
+}
+
+.starships .main_info h1:nth-of-type(even) {
+  text-align: left;
+  margin-left: auto;
+}
+
+.starships .info {
+  display: flex;
+  justify-content: center;
+}
+
+.starships .info .spec {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.starships .info .spec p {
+  text-align: center;
+}
+.starships .info .spec:nth-of-type(odd) {
+  border-right: solid 1px gainsboro;
+}
+
+.starships .info .spec:nth-of-type(even) {
+  border-left: solid 1px gainsboro;
+}
+/*
+.starships .info .spec p:first-of-type {
+  font-weight: bolder;
+}
+*/
+@media only screen and (min-width: 415px) and (min-height: 721px) {
+  .starships {
+    width: 47%;
+  }
 }
