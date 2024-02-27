@@ -20,8 +20,9 @@
       >
         <fieldset>
           <!-- This legend is put there to avoid an alert//ThankYou-->
-          <legend></legend>
-          <h1>Sign Up form</h1>
+          <legend>
+            <h1>Sign Up form</h1>
+          </legend>
           <p>Fill up the items in the from below.</p>
           <div>
             <label for="Name">Name:</label>
@@ -47,23 +48,25 @@
               name="Date_of_Birth"
             />
           </div>
-          <p>Preferred Pronouns</p>
-          <div>
-            <input type="radio" name="Pronouns" id="She_her" />
-            <label for="She_her">She/her</label>
-          </div>
-          <div>
-            <input type="radio" name="Pronouns" id="He_him" />
-            <label for="He_him">He/him</label>
-          </div>
-          <div>
-            <input type="radio" name="Pronouns" id="They_Them" />
-            <label for="They_Them">They/Them</label>
-          </div>
-          <div>
-            <input type="radio" name="Pronouns" id="unknown" />
-            <label for="unknown">I prefer not to say</label>
-          </div>
+          <fieldset>
+            <legend>Preferred Pronouns</legend>
+            <div>
+              <input type="radio" name="Pronouns" id="She_her" />
+              <label for="She_her">She/her</label>
+            </div>
+            <div>
+              <input type="radio" name="Pronouns" id="He_him" />
+              <label for="He_him">He/him</label>
+            </div>
+            <div>
+              <input type="radio" name="Pronouns" id="They_Them" />
+              <label for="They_Them">They/Them</label>
+            </div>
+            <div>
+              <input type="radio" name="Pronouns" id="unknown" />
+              <label for="unknown">I prefer not to say</label>
+            </div>
+          </fieldset>
           <div class="button_list">
             <button
               id="submit"
