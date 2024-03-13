@@ -1,5 +1,6 @@
 ## Code Review Exercise
 
+
 Write your code review here in markdown format. 
 
 The first code review, it is regarding the hash movement through the page, other than that it is the Top bar navigation.
