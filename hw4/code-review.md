@@ -2,15 +2,15 @@
 
 Write your code review here in markdown format. 
 
-**First code review, it is regarding the hash movement through the page, other than that it is the Top bar navigation.
-The main issue was that the hash wasen't being cleared, in that it casued the html body to not move through the page only after a couple of clicks through the rest of the nav.
+The first code review, it is regarding the hash movement through the page, other than that it is the Top bar navigation.
+The main issue was that the hash wasn't being cleared, in that it caused the html body to not move through the page only after a couple of clicks through the rest of the nav.
 
 What is needed:
 - A javascript code used with the onclick html element/etc.
 - The onclick event must be added to the nav locations.
-- The hash must be cleared to changed to ensure working results.
+- The hash must be cleared to change to ensure working results.
 
-*Code view before change:
+Code view before change:
 
 ```html
 <li class="nav-list-item">
@@ -20,8 +20,8 @@ What is needed:
               >Introduction</a
             >
 ```
-*New code
-'''html
+New code
+```html
 <li class="nav-list-item">
             <a
               onclick="hash()"
@@ -30,10 +30,10 @@ What is needed:
               >Introduction</a
             >
 ```
-- Do the rest to the a elements in the nav list item
+- Do the rest of the elements in the nav list item
 
-*Java script code.
-The javascript code, it will reset the hash through the function.
+Java script code.
+The javascript code will reset the hash through the function.
 
 ```js
 function hash() {
@@ -41,24 +41,24 @@ function hash() {
 }
 ```
 
-**Second Code review has to do with the HTML and CSS, memory is being lost when converted into smaller screen display.
+The second code review has to do with HTML and CSS; memory is lost when converted into a smaller screen display.
 
-* Issue
+Issue
 - Fullscreen
-	<img scr="../code-review-codebase/images/Second,One,one.PNG" height=200 alt="Issue in full screen before fix">
+	<img scr="./code-review-codebase/images/Second,One,one.PNG" height=200 alt="Issue in full screen before fix">
 
 - Smaller Screen
-	<img scr="../code-review-codebase/images/Second,One,two.PNG" height=200 alt="Issue in half screen before fix">
+	<img scr="./code-review-codebase/images/Second,One,two.PNG" height=200 alt="Issue in half screen before fix">
 
-* The fix result on the Small Screen.
+ The fix result is on the small screen.
 
 - Fullscreen, No change.
 
 - Smaller Screen
-	<img scr="../code-review-codebase/images/Second,two,two.PNG" height=200 alt="Issue in half screen, fixed">
+	<img scr=".\code-review-codebase\images\'Second,two,two.PNG'" height=200 alt="Issue in half screen, fixed">
 
 *CSS code
-The code in CSS. Instead of allowing the block to be displayed as none, it is displayed as a block. To ensure no data lost to the clients/users with small screens.
+The code in CSS. Instead of allowing the block to be displayed as none, it is displayed as a block. To ensure no data is lost to the clients/users with small screens.
 
 ```CSS
 .characteristics-image {
@@ -68,8 +68,8 @@ The code in CSS. Instead of allowing the block to be displayed as none, it is di
 ```
 - As a note, there are better ways to display an image than just to display it as a block.
 
-**Third Problem, it is not as big, however and if it is, four should do.
--This third problem is regarding the lack of information on the button, which might be needed for people that use listing web elements to navigate through the web.
+Third Problem: it is not as big, however, and if it is, four should do.
+-This third problem is regarding the lack of information on the button, which might be needed for people who use listing web elements to navigate through the web.
 
 Before fix
 ```html
@@ -91,13 +91,13 @@ After fix
               >
 ```
 
-**Four problem, the form is not set up correct, in which it does not allow the form to be submitted or restarded.
+* The Fourth problem, the form is not set up correctly, and it does not allow the form to be submitted or restarded.
 
-- How it was fixed, the buttons were placed outside of the form, in which it was placed inside.
-- Other than that, a few elements were misiing like the fieldset and legend.
+- How it was fixed: The buttons were placed outside of the form, which was placed inside.
+- Other than that, a few elements were missing, like the fieldset and legend.
 
 The fix is
-- fieldset and legend was added.
+- fieldset and legend were added.
 ```html
 <form id="RequestInfo" class="content-container form">
         <fieldset>
@@ -105,7 +105,7 @@ The fix is
           <div
 ```
 
-- The buttons and funcationality fix.
+- The buttons and functionality are fixed.
 ```html
             <input class="form-button" type="submit" value="submit" />
             <input class="form-button" type="reset" value="reset" />
@@ -113,8 +113,8 @@ The fix is
         </fieldset>
       </form>
 ```
-The form was ended before the two inputs of the buttons.
+The form was ended before the two buttons were inputted.
 
--Name: Ahmed Al-Badri
--Class: Html web.
-First is code 406 and it is regarding less formats for input
+
+Name: Ahmed Al-Badri
+Class: Html web.
