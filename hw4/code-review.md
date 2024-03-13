@@ -11,16 +11,16 @@ What is needed:
 - The hash must be cleared to changed to ensure working results.
 
 *Code view before change:
-'''html
+```html
 <li class="nav-list-item">
             <a
               href="#Introduction"
               class="nav-link hover-transition"
               >Introduction</a
             >
-'''
+```
 *New code
-'''html
+```html
 <li class="nav-list-item">
             <a
               onclick="hash()"
@@ -28,59 +28,59 @@ What is needed:
               class="nav-link hover-transition"
               >Introduction</a
             >
-'''
+```
 - Do the rest to the a elements in the nav list item
 
 *Java script code.
 The javascript code, it will reset the hash through the function.
 
-'''js
+```js
 function hash() {
   location.hash = "";
 }
-'''
+```
 
 **Second Code review has to do with the HTML and CSS, memory is being lost when converted into smaller screen display.
 
 * Issue
 - Fullscreen
-	<img scr="../code-review-codebase/images/Second,One,one.PNG" height=200 alt="Issue in full screen before fix">
+	<img scr="./code-review-codebase/images/Second,One,one.PNG" height=200 alt="Issue in full screen before fix">
 
 - Smaller Screen
-	<img scr="../code-review-codebase/images/Second,One,two.PNG" height=200 alt="Issue in half screen before fix">
+	<img scr="./code-review-codebase/images/Second,One,two.PNG" height=200 alt="Issue in half screen before fix">
 
 * The fix result on the Small Screen.
 
 - Fullscreen, No change.
 
 - Smaller Screen
-	<img scr="../code-review-codebase/images/Second,two,two.PNG" height=200 alt="Issue in half screen, fixed">
+	<img scr="./code-review-codebase/images/Second,two,two.PNG" height=200 alt="Issue in half screen, fixed">
 
 *CSS code
 The code in css. Instead of allowing the block to be display as none, it is displayed as a block. To ensure none data lost to the clients/users with small screens.
 
-'''CSS
+```CSS
 .characteristics-image {
     display: inline-block;
     padding: 5px;
   }
-'''
+```
 - As a note, their are better ways to display an image then just to display it as a block.
 
 **Third Problem, it is not as big, however and if it is, four should do.
 -This third problem is regarding the lack of information on the button, in which might be needed for poeple that use listing web elements to navigated through the web.
 
 Before fix
-'''html
+```html
 <div class="space-between-distributed-row-container">
               <h3>Origin</h3>
               <button
                 class="close-popup-button"
               >
-'''
+```
 
 After fix
-'''html
+```html
 <div class="space-between-distributed-row-container">
               <h3>Origin</h3>
               <button
@@ -88,7 +88,7 @@ After fix
                 aria-label="close popup window"
                 title="close popup window"
               >
-'''
+```
 
 **Four problem, the form is not set up correct, in which it does not allow the form to be submitted or restarded.
 
@@ -97,21 +97,21 @@ After fix
 
 The fix is
 - fieldset and legend was added.
-'''html
+```html
 <form id="RequestInfo" class="content-container form">
         <fieldset>
           <legend><h1>Tell us what you want to learn more</h1></legend>
           <div
-'''
+```
 
 - The buttons and funcationality fix.
-'''html
+```html
             <input class="form-button" type="submit" value="submit" />
             <input class="form-button" type="reset" value="reset" />
           </div>
         </fieldset>
       </form>
-'''
+```
 The form was ended before the two inputs of the buttons.
 
 -Name: Ahmed Al-Badri
