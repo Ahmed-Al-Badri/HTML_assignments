@@ -11,6 +11,7 @@ What is needed:
 - The hash must be cleared to changed to ensure working results.
 
 *Code view before change:
+
 '''html
 <li class="nav-list-item">
             <a
@@ -57,7 +58,7 @@ function hash() {
 	<img scr="../code-review-codebase/images/Second,two,two.PNG" height=200 alt="Issue in half screen, fixed">
 
 *CSS code
-The code in css. Instead of allowing the block to be display as none, it is displayed as a block. To ensure none data lost to the clients/users with small screens.
+The code in CSS. Instead of allowing the block to be displayed as none, it is displayed as a block. To ensure no data lost to the clients/users with small screens.
 
 '''CSS
 .characteristics-image {
@@ -65,10 +66,10 @@ The code in css. Instead of allowing the block to be display as none, it is disp
     padding: 5px;
   }
 '''
-- As a note, their are better ways to display an image then just to display it as a block.
+- As a note, there are better ways to display an image than just to display it as a block.
 
 **Third Problem, it is not as big, however and if it is, four should do.
--This third problem is regarding the lack of information on the button, in which might be needed for poeple that use listing web elements to navigated through the web.
+-This third problem is regarding the lack of information on the button, which might be needed for people that use listing web elements to navigate through the web.
 
 Before fix
 '''html
