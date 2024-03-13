@@ -12,14 +12,14 @@ What is needed:
 
 *Code view before change:
 
-'''html
+```html
 <li class="nav-list-item">
             <a
               href="#Introduction"
               class="nav-link hover-transition"
               >Introduction</a
             >
-'''
+```
 *New code
 '''html
 <li class="nav-list-item">
@@ -29,17 +29,17 @@ What is needed:
               class="nav-link hover-transition"
               >Introduction</a
             >
-'''
+```
 - Do the rest to the a elements in the nav list item
 
 *Java script code.
 The javascript code, it will reset the hash through the function.
 
-'''js
+```js
 function hash() {
   location.hash = "";
 }
-'''
+```
 
 **Second Code review has to do with the HTML and CSS, memory is being lost when converted into smaller screen display.
 
@@ -60,28 +60,28 @@ function hash() {
 *CSS code
 The code in CSS. Instead of allowing the block to be displayed as none, it is displayed as a block. To ensure no data lost to the clients/users with small screens.
 
-'''CSS
+```CSS
 .characteristics-image {
     display: inline-block;
     padding: 5px;
   }
-'''
+```
 - As a note, there are better ways to display an image than just to display it as a block.
 
 **Third Problem, it is not as big, however and if it is, four should do.
 -This third problem is regarding the lack of information on the button, which might be needed for people that use listing web elements to navigate through the web.
 
 Before fix
-'''html
+```html
 <div class="space-between-distributed-row-container">
               <h3>Origin</h3>
               <button
                 class="close-popup-button"
               >
-'''
+```
 
 After fix
-'''html
+```html
 <div class="space-between-distributed-row-container">
               <h3>Origin</h3>
               <button
@@ -89,7 +89,7 @@ After fix
                 aria-label="close popup window"
                 title="close popup window"
               >
-'''
+```
 
 **Four problem, the form is not set up correct, in which it does not allow the form to be submitted or restarded.
 
@@ -98,21 +98,21 @@ After fix
 
 The fix is
 - fieldset and legend was added.
-'''html
+```html
 <form id="RequestInfo" class="content-container form">
         <fieldset>
           <legend><h1>Tell us what you want to learn more</h1></legend>
           <div
-'''
+```
 
 - The buttons and funcationality fix.
-'''html
+```html
             <input class="form-button" type="submit" value="submit" />
             <input class="form-button" type="reset" value="reset" />
           </div>
         </fieldset>
       </form>
-'''
+```
 The form was ended before the two inputs of the buttons.
 
 -Name: Ahmed Al-Badri
